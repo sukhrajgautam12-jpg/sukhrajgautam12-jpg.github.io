@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sukhraj Website</title>
+<style>
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:#111;
+    color:white;
+    text-align:center;
+}
+.header{
+    padding:80px 20px;
+}
+h1{
+    font-size:50px;
+}
+p{
+    font-size:20px;
+}
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 25px;
+    background:#00aaff;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+}
+.footer{
+    margin-top:100px;
+    padding:20px;
+    background:#000;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+    <h1>Welcome to Sukhraj Website</h1>
+    <p>This is my first website.</p>
+    <a href="#" class="btn">Contact Me</a>
+</div>
+
+<div class="footer">
+    © 2026 Sukhraj. All Rights Reserved.
+</div>
+
+</body>
+</html>
