@@ -3,38 +3,166 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>सुखराज की वेबसाइट</title>
+    <title>Sukhraj | Portfolio</title>
+    <!-- Google Fonts से मॉडर्न फॉन्ट (Poppins) -->
+    <link href="https://googleapis.com" rel="stylesheet">
+    <!-- सोशल मीडिया आइकॉन्स के लिए FontAwesome -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+    
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #111;
-            color: white;
-            text-align: center;
-            padding-top: 100px;
+        /* बेसिक रीसेट और बैकग्राउंड */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
         }
-        h1 { font-size: 2.5rem; }
-        p { font-size: 1.2rem; color: #ccc; }
-        .btn {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 12px 24px;
-            background-color: #00a2ff;
-            color: white;
+        body {
+            background-color: #0f172a; /* प्रीमियम डार्क ब्लू-ब्लैक रंग */
+            color: #f8fafc;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* 1. प्रोफेशनल नेविगेशन बार */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 5%;
+            background-color: #1e293b;
+            border-bottom: 1px solid #334155;
+        }
+        .logo {
+            font-size: 22px;
+            font-weight: 700;
+            color: #38bdf8; /* स्काई ब्लू रंग */
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+        nav ul li a {
+            color: #94a3b8;
             text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
+            font-size: 15px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #38bdf8;
+        }
+
+        /* मुख्य कंटेंट एरिया */
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+        }
+        .hero h1 {
+            font-size: 42px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            letter-spacing: -0.5px;
+        }
+        .hero h1 span {
+            color: #38bdf8;
+        }
+        .hero p {
+            font-size: 18px;
+            color: #94a3b8;
+            margin-bottom: 30px;
+            font-weight: 300;
+        }
+
+        /* सुंदर Contact Me बटन */
+        .btn-contact {
+            display: inline-block;
+            background-color: #38bdf8;
+            color: #0f172a;
+            padding: 12px 35px;
+            border-radius: 30px; /* कैप्सूल शेप */
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            box-shadow: 0 4px 14px rgba(56, 189, 248, 0.4);
+            transition: transform 0.2s, box-shadow 0.2s;
+            margin-bottom: 40px;
+        }
+        .btn-contact:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(56, 189, 248, 0.6);
+        }
+
+        /* 3. सोशल मीडिया आइकॉन्स */
+        .social-links {
+            display: flex;
+            gap: 20px;
+        }
+        .social-links a {
+            color: #94a3b8;
+            font-size: 24px;
+            transition: color 0.3s, transform 0.2s;
+        }
+        .social-links a:hover {
+            color: #38bdf8;
+            transform: scale(1.15);
+        }
+
+        /* पादलेख (Footer) */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #0f172a;
+            color: #64748b;
+            font-size: 13px;
+            border-top: 1px solid #1e293b;
         }
     </style>
 </head>
 <body>
 
-    <h1>Welcome to Sukhraj Website</h1>
-    <p>This is my first website.</p>
-    
-    <!-- यहाँ आपका इंस्टाग्राम लिंक पूरी तरह सेट कर दिया गया है -->
-    <a href="https://www.instagram.com/sukhraj__xr?igsh=MTRjd3R6ZXZ6dDMweg==" target="_blank" class="btn">Contact Me</a>
+    <!-- नेविगेशन बार -->
+    <header>
+        <div class="logo">Sukhraj.</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <p style="margin-top: 150px; font-size: 0.9rem; color: #555;">© 2026 Sukhraj. All Rights Reserved.</p>
+    <!-- मुख्य भाग -->
+    <main>
+        <div class="hero">
+            <h1>Welcome to <span>Sukhraj Website</span></h1>
+            <p>This is my first professional portfolio website.</p>
+        </div>
+
+        <!-- मेल भेजने के लिए बटन (अपनी ईमेल आईडी से बदलें) -->
+        <a href="mailto:sukhrajgautam12@gmail.com" class="btn-contact">Contact Me</a>
+
+        <!-- सोशल मीडिया लिंक्स (अपने सही लिंक यहाँ डालें) -->
+        <div class="social-links">
+            <a href="https://github.com" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="#" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+    </main>
+
+    <!-- फुटर -->
+    <footer>
+        <p>&copy; 2026 Sukhraj. All Rights Reserved.</p>
+    </footer>
 
 </body>
-</html>
+                </html>
+    
