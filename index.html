@@ -1,66 +1,33 @@
-            <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="hi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sukhraj | Professional Portfolio</title>
+    <title>Sukhraj Portfolio</title>
+    <!-- Google Fonts से Poppins फॉन्ट जोड़ा गया है ताकि यह बिल्कुल स्क्रीनशॉट जैसा दिखे -->
+    <link href="https://googleapis.com" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <!-- फॉन्ट और आइकन्स के लिए -->
-    <link rel="stylesheet" href="https://cloudflare.com">
 </head>
 <body>
 
-    <!-- नेविगेशन बार -->
-    <header>
-        <nav class="navbar">
-            <div class="logo">Sukhraj<span>.</span></div>
-            <ul class="nav-links">
-                <li><a href="#home">मुख्य भाग</a></li>
-                <li><a href="#about">मेरे बारे में</a></li>
-                <li><a href="#contact">संपर्क करें</a></li>
-            </ul>
+    <!-- टॉप नेविगेशन बार -->
+    <header class="navbar">
+        <div class="logo">Sukhraj<span>.</span></div>
+        <nav class="nav-links">
+            <a href="#" class="active">Home</a>
+            <a href="#">About</a>
+            <a href="#">Projects</a>
         </nav>
     </header>
 
-    <!-- हीरो सेक्शन (मुख्य भाग) -->
-    <section id="home" class="hero-section">
-        <div class="hero-content">
-            <h1>Welcome to <span>Sukhraj Website</span></h1>
-            <p>This is my first professional portfolio website.</p>
-            <div class="cta-buttons">
-                <a href="https://www.instagram.com/sukhrajj_xr/" target="_blank" class="btn primary-btn">
-                    <i class="fab fa-instagram"></i> मुझे इंस्टाग्राम पर मैसेज करें
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- सोशल मीडिया और संपर्क सेक्शन -->
-    <section id="contact" class="social-section">
-        <h2>चलो साथ मिलकर काम करते हैं</h2>
-        <p>आप नीचे दिए गए सोशल मीडिया हैंडल के जरिए मुझसे जुड़ सकते हैं:</p>
+    <!-- मुख्य होमपेज कंटेंट -->
+    <main class="hero-section">
+        <h1 class="main-heading">Welcome to <br><span>Sukhraj Website</span></h1>
+        <p class="sub-heading">This is my first professional portfolio website.</p>
         
-        <div class="social-links">
-            <!-- इंस्टाग्राम लिंक -->
-            <a href="https://www.instagram.com/sukhrajj_xr/" target="_blank" class="social-card instagram">
-                <i class="fab fa-instagram"></i>
-                <h3>Instagram</h3>
-                <span>@sukhrajj_xr</span>
-            </a>
-
-            <!-- गिटहब लिंक (यहाँ अपनी सही ID डाल सकते हैं) -->
-            <a href="https://github.com" target="_blank" class="social-card github">
-                <i class="fab fa-github"></i>
-                <h3>GitHub</h3>
-                <span>Follow me</span>
-            </a>
-        </div>
-    </section>
-
-    <!-- फुटर -->
-    <footer>
-        <p>&copy; 2026 Sukhraj. All Rights Reserved.</p>
-    </footer>
+        <!-- इंस्टाग्राम का लिंक 'Contact Me' बटन में जोड़ा गया है -->
+        <a href="https://www.instagram.com/sukhrajj_xr/" target="_blank" class="btn-contact">Contact Me</a>
+    </main>
 
 </body>
 </html>
