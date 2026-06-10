@@ -1,33 +1,156 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sukhraj Portfolio</title>
-    <!-- Google Fonts से Poppins फॉन्ट जोड़ा गया है ताकि यह बिल्कुल स्क्रीनशॉट जैसा दिखे -->
-    <link href="https://googleapis.com" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <title>Sukhraj | Portfolio</title>
+    <style>
+        /* पूरी वेबसाइट के लिए बेसिक डार्क सेटिंग्स */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #0f172a; /* गहरा डार्क ब्लू बैकग्राउंड */
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        /* नेविगेशन बार (Header) */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #1e293b; /* थोड़ा हल्का डार्क बार */
+            padding: 20px 40px;
+            border-radius: 12px;
+            margin-bottom: auto; /* कंटेंट को बीच में रखने के लिए */
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 800;
+            color: #38bdf8; /* चमकीला नीला रंग */
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #94a3b8; /* हल्का ग्रे रंग टेक्स्ट के लिए */
+            margin-left: 25px;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffffff; /* होवर करने पर सफेद */
+        }
+
+        /* मुख्य कंटेंट एरिया (Hero Section) */
+        .hero-container {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 80px 20px;
+            margin-bottom: auto; /* वर्टिकल सेंटर के लिए */
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: #ffffff;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+
+        /* 'Sukhraj Website' को अलग रंग देने के लिए */
+        .highlight {
+            color: #38bdf8; 
+            display: block; /* नई लाइन में लाने के लिए */
+            margin-top: 10px;
+        }
+
+        p {
+            font-size: 1.3rem;
+            color: #64748b; /* थोड़ा धीमा टेक्स्ट रंग */
+            max-width: 500px;
+            margin: 0 auto 40px auto;
+            font-weight: 400;
+        }
+
+        /* ग्लोइंग इफ़ेक्ट वाला कांटेक्ट बटन */
+        .btn-contact {
+            display: inline-block;
+            background: #38bdf8;
+            color: #0f172a; /* बटन के अंदर डार्क टेक्स्ट */
+            padding: 16px 45px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            /* ग्लोइंग शैडो इफ़ेक्ट */
+            box-shadow: 0 0 25px rgba(56, 189, 248, 0.4); 
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .btn-contact:hover {
+            transform: scale(1.03);
+            box-shadow: 0 0 35px rgba(56, 189, 248, 0.7);
+        }
+
+        /* मोबाइल रेस्पॉन्सिव सेटिंग्स */
+        @media (max-width: 600px) {
+            header {
+                padding: 15px 20px;
+            }
+            .logo {
+                font-size: 20px;
+            }
+            nav a {
+                margin-left: 15px;
+                font-size: 0.9rem;
+            }
+            h1 {
+                font-size: 2.3rem;
+            }
+            p {
+                font-size: 1.1rem;
+            }
+            .btn-contact {
+                padding: 14px 35px;
+                font-size: 1rem;
+                width: 100%; /* मोबाइल पर बटन पूरा चौड़ा दिखेगा */
+                max-width: 280px;
+            }
+        }
+    </style>
 </head>
 <body>
 
-    <!-- टॉप नेविगेशन बार -->
-    <header class="navbar">
-        <div class="logo">Sukhraj<span>.</span></div>
-        <nav class="nav-links">
-            <a href="#" class="active">Home</a>
+    <!-- हेडर सेक्शन -->
+    <header>
+        <div class="logo">Sukhraj.</div>
+        <nav>
+            <a href="#">Home</a>
             <a href="#">About</a>
             <a href="#">Projects</a>
         </nav>
     </header>
 
-    <!-- मुख्य होमपेज कंटेंट -->
-    <main class="hero-section">
-        <h1 class="main-heading">Welcome to <br><span>Sukhraj Website</span></h1>
-        <p class="sub-heading">This is my first professional portfolio website.</p>
+    <!-- मुख्य कंटेंट -->
+    <div class="hero-container">
+        <h1>Welcome to <span class="highlight">Sukhraj Website</span></h1>
+        <p>This is my first professional portfolio website.</p>
         
-        <!-- इंस्टाग्राम का लिंक 'Contact Me' बटन में जोड़ा गया है -->
-        <a href="https://www.instagram.com/sukhrajj_xr/" target="_blank" class="btn-contact">Contact Me</a>
-    </main>
+        <!-- आपकी इंस्टाग्राम आईडी का लिंक यहाँ जोड़ दिया गया है -->
+        <a href="https://instagram.com" target="_blank" class="btn-contact">Contact Me</a>
+    </div>
 
 </body>
-</html>
+    </html>
+    
