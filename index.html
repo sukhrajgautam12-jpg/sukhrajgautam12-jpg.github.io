@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+        <!DOCTYPE html>
 <html lang="hi">
 <head>
     <meta charset="UTF-8">
@@ -37,7 +37,7 @@
         .logo {
             font-size: 22px;
             font-weight: 700;
-            color: #38bdf8; /* स्काई ब्लू रंग */
+            color: #38bdf8; /* स्काईू ब्लू रंग */
         }
         nav ul {
             display: flex;
@@ -103,15 +103,21 @@
         /* 3. सोशल मीडिया आइकॉन्स */
         .social-links {
             display: flex;
-            gap: 20px;
+            gap: 25px;
         }
         .social-links a {
             color: #94a3b8;
-            font-size: 24px;
+            font-size: 28px;
             transition: color 0.3s, transform 0.2s;
         }
-        .social-links a:hover {
-            color: #38bdf8;
+        /* गिटहब होवर कलर */
+        .social-links a.github-icon:hover {
+            color: #ffffff;
+            transform: scale(1.15);
+        }
+        /* इंस्टाग्राम होवर कलर (ओरिजिनल इंस्टाग्राम कलर) */
+        .social-links a.instagram-icon:hover {
+            color: #E1306C;
             transform: scale(1.15);
         }
 
@@ -147,14 +153,16 @@
             <p>This is my first professional portfolio website.</p>
         </div>
 
-        <!-- मेल भेजने के लिए बटन (अपनी ईमेल आईडी से बदलें) -->
+        <!-- मेल भेजने के लिए बटन -->
         <a href="mailto:sukhrajgautam12@gmail.com" class="btn-contact">Contact Me</a>
 
-        <!-- सोशल मीडिया लिंक्स (अपने सही लिंक यहाँ डालें) -->
+        <!-- सोशल मीडिया लिंक्स आपके असली इंस्टाग्राम लिंक के साथ -->
         <div class="social-links">
-            <a href="https://github.com" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-            <a href="#" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-            <a href="#" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <!-- आपका गिटहब लिंक -->
+            <a href="https://github.com" target="_blank" title="GitHub" class="github-icon"><i class="fab fa-github"></i></a>
+            
+            <!-- आपका असली इंस्टाग्राम लिंक -->
+            <a href="https://www.instagram.com/sukhraj__xr?igsh=MTRjd3R6ZXZ6dDMweg==" target="_blank" title="Instagram" class="instagram-icon"><i class="fab fa-instagram"></i></a>
         </div>
     </main>
 
@@ -164,5 +172,4 @@
     </footer>
 
 </body>
-                </html>
-    
+</html>
