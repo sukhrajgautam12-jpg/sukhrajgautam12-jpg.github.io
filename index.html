@@ -152,5 +152,129 @@
     </div>
 
 </body>
-    </html>
+    </html> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool AI Animation Card</title>
+    <style>
+        /* पूरे पेज का बैकग्राउंड और लेआउट */
+        body {
+            margin: 0;
+            padding: 0;
+            background: #0d1117; /* GitHub डार्क मोड कलर */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            overflow: hidden;
+        }
+
+        /* एनिमेटेड कार्ड कंटेनर */
+        .animation-card {
+            position: relative;
+            width: 320px;
+            height: 420px;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+        }
+
+        /* घूमता हुआ बैकग्राउंड ग्रेडिएंट (बॉर्डर इफेक्ट के लिए) */
+        .animation-card::before {
+            content: '';
+            position: absolute;
+            width: 150px;
+            height: 700px;
+            background: linear-gradient(#00ccff, #d400d4);
+            animation: rotateGlow 4s linear infinite;
+        }
+
+        /* कार्ड का अंदरूनी हिस्सा जो बॉर्डर को छुपाता है */
+        .animation-card::after {
+            content: '';
+            position: absolute;
+            background: #0d1117;
+            inset: 4px; /* बॉर्डर की मोटाई */
+            border-radius: 16px;
+        }
+
+        /* कार्ड के अंदर का कंटेंट */
+        .content {
+            z-index: 10;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .content h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+            background: linear-gradient(45deg, #00ccff, #d400d4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .content p {
+            font-size: 1em;
+            color: #8b949e;
+            line-height: 1.6;
+        }
+
+        /* ग्लोइंग पल्स इफेक्ट (नीचे छोटा सर्कल) */
+        .pulse-circle {
+            width: 20px;
+            height: 20px;
+            background: #00ccff;
+            border-radius: 50%;
+            margin: 20px auto 0;
+            box-shadow: 0 0 10px #00ccff, 0 0 30px #00ccff, 0 0 60px #00ccff;
+            animation: pulse 1.5s infinite alternate;
+        }
+
+        /* 1. घूमने वाला एनिमेशन */
+        @keyframes rotateGlow {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* 2. धड़कने (Pulse) वाला एनिमेशन */
+        @keyframes pulse {
+            0% {
+                transform: scale(0.8);
+                opacity: 0.5;
+            }
+            100% {
+                transform: scale(1.2);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- एनिमेटेड कार्ड -->
+    <div class="animation-card">
+        <div class="content">
+            <h2>Welcome User</h2>
+            <p>This is a live CSS glowing border animation created for your website or profile.</p>
+            <!-- पल्स डॉट -->
+            <div class="pulse-circle"></div>
+        </div>
+    </div>
+
+</body>
+</html>
+
     
