@@ -1,170 +1,61 @@
-<!DOCTYPE html>
+            <!DOCTYPE html>
 <html lang="hi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sukhraj | Portfolio</title>
-    <!-- Google Fonts से मॉडर्न फॉन्ट (Poppins) -->
-    <link href="https://googleapis.com" rel="stylesheet">
-    <!-- सोशल मीडिया आइकॉन्स के लिए FontAwesome -->
+    <title>Sukhraj | Professional Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- फॉन्ट और आइकन्स के लिए -->
     <link rel="stylesheet" href="https://cloudflare.com">
-    
-    <style>
-        /* बेसिक रीसेट और बैकग्राउंड */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-        }
-        body {
-            background-color: #0f172a; /* प्रीमियम डार्क ब्लू-ब्लैक रंग */
-            color: #f8fafc;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-
-        /* 1. प्रोफेशनल नेविगेशन बार */
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 5%;
-            background-color: #1e293b;
-            border-bottom: 1px solid #334155;
-        }
-        .logo {
-            font-size: 22px;
-            font-weight: 700;
-            color: #38bdf8; /* स्काईू ब्लू रंग */
-        }
-        nav ul {
-            display: flex;
-            list-style: none;
-            gap: 20px;
-        }
-        nav ul li a {
-            color: #94a3b8;
-            text-decoration: none;
-            font-size: 15px;
-            font-weight: 500;
-            transition: color 0.3s;
-        }
-        nav ul li a:hover {
-            color: #38bdf8;
-        }
-
-        /* मुख्य कंटेंटエリア */
-        main {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 40px 20px;
-        }
-        .hero h1 {
-            font-size: 42px;
-            font-weight: 700;
-            margin-bottom: 15px;
-            letter-spacing: -0.5px;
-        }
-        .hero h1 span {
-            color: #38bdf8;
-        }
-        .hero p {
-            font-size: 18px;
-            color: #94a3b8;
-            margin-bottom: 30px;
-            font-weight: 300;
-        }
-
-        /* सुंदर Contact Me बटन */
-        .btn-contact {
-            display: inline-block;
-            background-color: #38bdf8;
-            color: #0f172a;
-            padding: 12px 35px;
-            border-radius: 30px; /* कैप्सूल शेप */
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 16px;
-            box-shadow: 0 4px 14px rgba(56, 189, 248, 0.4);
-            transition: transform 0.2s, box-shadow 0.2s;
-            margin-bottom: 40px;
-        }
-        .btn-contact:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(56, 189, 248, 0.6);
-        }
-
-        /* 3. सोशल मीडिया आइकॉन्स */
-        .social-links {
-            display: flex;
-            gap: 25px;
-        }
-        .social-links a {
-            color: #94a3b8;
-            font-size: 28px;
-            transition: color 0.3s, transform 0.2s;
-        }
-        /* गिटहब होवर कलर */
-        .social-links a.github-icon:hover {
-            color: #ffffff;
-            transform: scale(1.15);
-        }
-        /* इंस्टाग्राम होवर कलर (ओरिजिनल इंस्टाग्राम कलर) */
-        .social-links a.instagram-icon:hover {
-            color: #E1306C;
-            transform: scale(1.15);
-        }
-
-        /* पादलेख (Footer) */
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #0f172a;
-            color: #64748b;
-            font-size: 13px;
-            border-top: 1px solid #1e293b;
-        }
-    </style>
 </head>
 <body>
 
     <!-- नेविगेशन बार -->
     <header>
-        <div class="logo">Sukhraj.</div>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Projects</a></li>
+        <nav class="navbar">
+            <div class="logo">Sukhraj<span>.</span></div>
+            <ul class="nav-links">
+                <li><a href="#home">मुख्य भाग</a></li>
+                <li><a href="#about">मेरे बारे में</a></li>
+                <li><a href="#contact">संपर्क करें</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- मुख्य भाग -->
-    <main>
-        <div class="hero">
+    <!-- हीरो सेक्शन (मुख्य भाग) -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
             <h1>Welcome to <span>Sukhraj Website</span></h1>
             <p>This is my first professional portfolio website.</p>
+            <div class="cta-buttons">
+                <a href="https://www.instagram.com/sukhrajj_xr/" target="_blank" class="btn primary-btn">
+                    <i class="fab fa-instagram"></i> मुझे इंस्टाग्राम पर मैसेज करें
+                </a>
+            </div>
         </div>
+    </section>
 
-        <!-- इंस्टाग्राम प्रोफाइल खोलने के लिए बटन -->
-        <a href="https://www.instagram.com/sukhraj__xr?igsh=MTRjd3R6ZXZ6dDMweg==" target="_blank" class="btn-contact">Contact Me</a>
-
-        <!-- सोशल मीडिया लिंक्स आपके असली इंस्टाग्राम लिंक के साथ -->
+    <!-- सोशल मीडिया और संपर्क सेक्शन -->
+    <section id="contact" class="social-section">
+        <h2>चलो साथ मिलकर काम करते हैं</h2>
+        <p>आप नीचे दिए गए सोशल मीडिया हैंडल के जरिए मुझसे जुड़ सकते हैं:</p>
+        
         <div class="social-links">
-            <!-- आपका गिटहब लिंक -->
-            <a href="https://github.com" target="_blank" title="GitHub" class="github-icon"><i class="fab fa-github"></i></a>
-            
-            <!-- आपका असली इंस्टाग्राम लिंक -->
-            <a href="https://www.instagram.com/sukhraj__xr?igsh=MTRjd3R6ZXZ6dDMweg==" target="_blank" title="Instagram" class="instagram-icon"><i class="fab fa-instagram"></i></a>
+            <!-- इंस्टाग्राम लिंक -->
+            <a href="https://www.instagram.com/sukhrajj_xr/" target="_blank" class="social-card instagram">
+                <i class="fab fa-instagram"></i>
+                <h3>Instagram</h3>
+                <span>@sukhrajj_xr</span>
+            </a>
+
+            <!-- गिटहब लिंक (यहाँ अपनी सही ID डाल सकते हैं) -->
+            <a href="https://github.com" target="_blank" class="social-card github">
+                <i class="fab fa-github"></i>
+                <h3>GitHub</h3>
+                <span>Follow me</span>
+            </a>
         </div>
-    </main>
+    </section>
 
     <!-- फुटर -->
     <footer>
@@ -172,5 +63,4 @@
     </footer>
 
 </body>
-        </html>
-        
+</html>
